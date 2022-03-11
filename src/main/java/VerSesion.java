@@ -32,6 +32,7 @@ public class VerSesion extends HttpServlet {
 		Examen miExamen= (Examen) misesion.getAttribute("examen");
 		PrintWriter pw = response.getWriter();
 		pw.println("<html><body>" + miExamen);
+		pw.println(request.getURI());
 		pw.close();
 	}
 
